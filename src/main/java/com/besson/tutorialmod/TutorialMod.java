@@ -19,6 +19,7 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		// 主类调用物品注册方法
 		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}
