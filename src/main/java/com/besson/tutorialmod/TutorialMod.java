@@ -19,7 +19,7 @@ public class TutorialMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		// 调用各类的初始化方法
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 
