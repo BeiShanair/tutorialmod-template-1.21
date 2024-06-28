@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -36,6 +37,10 @@ public class ModItemGroups {
                     entries.add(ModItems.ICE_ETHER);
                     entries.add(Blocks.BRICKS);
                     entries.add(Items.DIAMOND);
+
+                    entries.add(ModBlocks.ICE_ETHER_BLOCK);
+                    entries.add(ModBlocks.ICE_ETHER_ORE);
+                    entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                 }).build());
     // 初始化方法
     public static void registerModItemGroups() {
