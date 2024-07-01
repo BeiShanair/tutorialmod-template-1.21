@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "ice_ether",
+  "ingredient": {
+    "item": "tutorialmod:raw_ice_ether"
+  },
+  "result": {
+    "id": "tutorialmod:ice_ether"
+  }
+}

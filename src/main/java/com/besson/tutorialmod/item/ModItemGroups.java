@@ -37,6 +37,7 @@ public class ModItemGroups {
                     entries.add(ModItems.ICE_ETHER);
                     entries.add(Blocks.BRICKS);
                     entries.add(Items.DIAMOND);
+                    entries.add(ModItems.RAW_ICE_ETHER);
 
                     entries.add(ModBlocks.ICE_ETHER_BLOCK);
                     entries.add(ModBlocks.ICE_ETHER_ORE);
