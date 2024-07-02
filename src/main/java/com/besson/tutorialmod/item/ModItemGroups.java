@@ -38,6 +38,8 @@ public class ModItemGroups {
                     entries.add(Blocks.BRICKS);
                     entries.add(Items.DIAMOND);
                     entries.add(ModItems.RAW_ICE_ETHER);
+                    entries.add(ModItems.CHEESE);
+                    entries.add(ModItems.STRAWBERRY);
 
                     entries.add(ModBlocks.ICE_ETHER_BLOCK);
                     entries.add(ModBlocks.ICE_ETHER_ORE);
