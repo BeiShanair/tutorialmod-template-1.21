@@ -1,0 +1,8 @@
+{
+  "block.tutorialmod.ice_ether_block": "Ice Ether Block",
+  "block.tutorialmod.ice_ether_ore": "Ice Ether Ore",
+  "block.tutorialmod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "item.tutorialmod.ice_ether": "Ice Ether",
+  "item.tutorialmod.raw_ice_ether": "Raw Ice Ether",
+  "itemGroup.tutorial_group": "Tutorial Group"
+}
