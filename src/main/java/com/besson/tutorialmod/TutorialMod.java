@@ -6,6 +6,7 @@ import com.besson.tutorialmod.item.ModItems;
 import com.besson.tutorialmod.mixin.GrassColorsMixin;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,13 +27,14 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerModBlocks();
 
-		int[] colorMap = GrassColorsMixin.getColorMap();
-        LOGGER.info("Grass color map length: {}", colorMap.length);
+//		int[] colorMap = GrassColorsMixin.getColorMap();
+//        LOGGER.info("Grass color map length: {}", colorMap.length);
+//
+//		int[] newColorMap = new int[128];
+//		GrassColorsMixin.setColorMap(newColorMap);
+//		LOGGER.info("Grass color map length: {}", GrassColorsMixin.getColorMap().length);
 
-		int[] newColorMap = new int[128];
-		GrassColorsMixin.setColorMap(newColorMap);
-		LOGGER.info("Grass color map length: {}", GrassColorsMixin.getColorMap().length);
-
+//		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
 
 		LOGGER.info("Hello Fabric world!");
 	}
