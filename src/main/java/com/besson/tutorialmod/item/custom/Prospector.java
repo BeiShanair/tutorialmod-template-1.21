@@ -1,5 +1,6 @@
 package com.besson.tutorialmod.item.custom;
 
+import com.besson.tutorialmod.tags.ModBlockTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -70,7 +71,7 @@ public class Prospector extends Item {
     }
 
     private boolean isRightBlock(BlockState blockState) {
-        if (blockState.isOf(Blocks.DIAMOND_ORE) || blockState.isOf(Blocks.IRON_ORE)) {
+        if (blockState.isIn(ModBlockTags.ORE_LIST)) {
             return true;
         }else {
             return false;
