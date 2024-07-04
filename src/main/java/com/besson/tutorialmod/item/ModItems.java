@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -16,6 +17,7 @@ public class ModItems {
     public static final Item CHEESE = registerItems("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
     public static final Item STRAWBERRY = registerItems("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
+    public static final Item PROSPECTOR = registerItems("prospector", new Prospector(new Item.Settings().maxDamage(127)));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法

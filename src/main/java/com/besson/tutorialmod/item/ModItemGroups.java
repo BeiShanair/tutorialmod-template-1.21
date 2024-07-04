@@ -41,6 +41,7 @@ public class ModItemGroups {
                     entries.add(ModItems.CHEESE);
                     entries.add(ModItems.STRAWBERRY);
                     entries.add(ModItems.ANTHRACITE);
+                    entries.add(ModItems.PROSPECTOR);
 
                     entries.add(ModBlocks.ICE_ETHER_BLOCK);
                     entries.add(ModBlocks.ICE_ETHER_ORE);
