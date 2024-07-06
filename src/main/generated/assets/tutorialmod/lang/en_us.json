@@ -6,6 +6,8 @@
   "item.tutorialmod.cheese": "Cheese",
   "item.tutorialmod.ice_ether": "Ice Ether",
   "item.tutorialmod.prospector": "Prospector",
+  "item.tutorialmod.prospector.shift_tooltip": "A tool used to find ores.",
+  "item.tutorialmod.prospector.tooltip": "Hold §6SHIFT§r for more information.",
   "item.tutorialmod.raw_ice_ether": "Raw Ice Ether",
   "item.tutorialmod.strawberry": "Strawberry",
   "itemGroup.tutorial_group": "Tutorial Group"
