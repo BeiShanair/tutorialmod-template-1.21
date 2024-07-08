@@ -1,14 +1,19 @@
 {
-	"required": true,
-	"package": "com.besson.tutorialmod.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"AbstractFurnaceBlockEntityMixin",
-		"EndermanEntityMixin",
-		"ExampleMixin",
-		"GrassColorsMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "com.besson.tutorialmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "EndermanEntityMixin",
+    "ExampleMixin",
+    "GrassColorsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ItemRendererAccessor",
+    "ItemRendererMixin",
+    "ModelLoaderMixin"
+  ]
 }

@@ -42,6 +42,7 @@ public class ModItemGroups {
                     entries.add(ModItems.STRAWBERRY);
                     entries.add(ModItems.ANTHRACITE);
                     entries.add(ModItems.PROSPECTOR);
+                    entries.add(ModItems.PLATE);
 
                     entries.add(ModBlocks.ICE_ETHER_BLOCK);
                     entries.add(ModBlocks.ICE_ETHER_ORE);
