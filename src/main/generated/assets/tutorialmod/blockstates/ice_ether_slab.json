@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/ice_ether_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/ice_ether_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/ice_ether_slab_top"
+    }
+  }
+}
