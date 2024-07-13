@@ -27,9 +27,9 @@ public class ModBlocks {
     public static final Block ICE_ETHER_WALL = register("ice_ether_wall",
             new WallBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
     public static final Block ICE_ETHER_DOOR = register("ice_ether_door",
-            new DoorBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+            new DoorBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()));
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
-            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()));
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {
