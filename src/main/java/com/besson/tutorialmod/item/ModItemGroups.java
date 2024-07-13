@@ -35,6 +35,7 @@ public class ModItemGroups {
                 .icon(() -> new ItemStack(ModItems.ICE_ETHER))
                 .entries((displayContext, entries) -> {
                     entries.add(ModItems.ICE_ETHER);
+                    entries.add(ModItems.FIRE_ETHER);
                     entries.add(Blocks.BRICKS);
                     entries.add(Items.DIAMOND);
                     entries.add(ModItems.RAW_ICE_ETHER);
@@ -57,6 +58,12 @@ public class ModItemGroups {
                     entries.add(ModBlocks.ICE_ETHER_WALL);
                     entries.add(ModBlocks.ICE_ETHER_DOOR);
                     entries.add(ModBlocks.ICE_ETHER_TRAPDOOR);
+
+                    entries.add(ModItems.FIRE_ETHER_SWORD);
+                    entries.add(ModItems.FIRE_ETHER_SHOVEL);
+                    entries.add(ModItems.FIRE_ETHER_PICKAXE);
+                    entries.add(ModItems.FIRE_ETHER_AXE);
+                    entries.add(ModItems.FIRE_ETHER_HOE);
                 }).build());
     // 初始化方法
     public static void registerModItemGroups() {

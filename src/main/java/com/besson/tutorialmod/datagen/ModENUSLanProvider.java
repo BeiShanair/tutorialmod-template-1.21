@@ -16,12 +16,18 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.ICE_ETHER, "Ice Ether");
+        translationBuilder.add(ModItems.FIRE_ETHER, "Fire Ether");
         translationBuilder.add(ModItems.RAW_ICE_ETHER, "Raw Ice Ether");
         translationBuilder.add(ModItems.CHEESE, "Cheese");
         translationBuilder.add(ModItems.STRAWBERRY, "Strawberry");
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
         translationBuilder.add(ModItems.PROSPECTOR, "Prospector");
         translationBuilder.add(ModItems.PLATE, "Plate");
+        translationBuilder.add(ModItems.FIRE_ETHER_SWORD, "Fire Ether Sword");
+        translationBuilder.add(ModItems.FIRE_ETHER_SHOVEL, "Fire Ether Shovel");
+        translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE, "Fire Ether Pickaxe");
+        translationBuilder.add(ModItems.FIRE_ETHER_AXE, "Fire Ether Axe");
+        translationBuilder.add(ModItems.FIRE_ETHER_HOE, "Fire Ether Hoe");
 
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");

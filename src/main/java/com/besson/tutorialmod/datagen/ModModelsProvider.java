@@ -29,11 +29,18 @@ public class ModModelsProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ICE_ETHER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIRE_ETHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_ICE_ETHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FIRE_ETHER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_HOE, Models.HANDHELD);
 
     }
 }
