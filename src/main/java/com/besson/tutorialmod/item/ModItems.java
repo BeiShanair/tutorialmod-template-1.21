@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.item.custom.HatItem;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -38,6 +39,8 @@ public class ModItems {
             new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(37))));
     public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS,
             new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37))));
+    public static final Item HAT = registerItems("hat", new HatItem(HatItem.Type.HAT,
+            new Item.Settings().maxDamage(HatItem.Type.HAT.getMaxDamage(5))));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法
