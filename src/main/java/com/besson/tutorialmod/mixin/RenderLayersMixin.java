@@ -21,5 +21,6 @@ public class RenderLayersMixin {
     private static void onBlockInit(CallbackInfo ci) {
         BLOCKS.put(ModBlocks.ICE_ETHER_DOOR, RenderLayer.getCutout());
         BLOCKS.put(ModBlocks.ICE_ETHER_TRAPDOOR, RenderLayer.getCutout());
+        BLOCKS.put(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
     }
 }

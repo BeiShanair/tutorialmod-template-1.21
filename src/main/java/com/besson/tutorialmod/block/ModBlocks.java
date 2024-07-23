@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.block;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -30,6 +31,8 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()));
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()));
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, "strawberry_crop"),
+            new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {

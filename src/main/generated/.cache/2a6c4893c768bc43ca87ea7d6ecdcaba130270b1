@@ -1,4 +1,5 @@
-// 1.21	2024-07-22T10:24:52.0594773	TutorialMod/Block Loot Tables
+// 1.21	2024-07-23T10:34:00.8067318	TutorialMod/Block Loot Tables
 921371bb425e3b2c5b33039e36353de3134c4a1b data\tutorialmod\loot_table\blocks\raw_ice_ether_block.json
 f3bfce4964bcc7f9edb6cc7b7d63e568b50b0483 data\tutorialmod\loot_table\blocks\ice_ether_ore.json
 9d5c7704d9983f142c40a90636e96cdbc2e01eb2 data\tutorialmod\loot_table\blocks\ice_ether_block.json
+198baec289f8fccbabf60b715e0fb1862ce80cfa data\tutorialmod\loot_table\blocks\strawberry_crop.json

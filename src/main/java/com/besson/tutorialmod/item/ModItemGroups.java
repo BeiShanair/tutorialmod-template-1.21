@@ -71,6 +71,7 @@ public class ModItemGroups {
                     entries.add(ModItems.ICE_ETHER_BOOTS);
 
                     entries.add(ModItems.HAT);
+                    entries.add(ModItems.STRAWBERRY_SEEDS);
                 }).build());
     // 初始化方法
     public static void registerModItemGroups() {

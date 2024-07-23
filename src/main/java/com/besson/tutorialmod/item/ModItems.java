@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.custom.HatItem;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
@@ -41,6 +42,8 @@ public class ModItems {
             new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37))));
     public static final Item HAT = registerItems("hat", new HatItem(HatItem.Type.HAT,
             new Item.Settings().maxDamage(HatItem.Type.HAT.getMaxDamage(5))));
+    public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds",
+            new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法
