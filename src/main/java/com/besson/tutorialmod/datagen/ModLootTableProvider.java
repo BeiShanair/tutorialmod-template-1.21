@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.datagen;
 
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -42,6 +43,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(StrawberryCropBlock.AGE, 5));
         addDrop(ModBlocks.STRAWBERRY_CROP, cropDrops(
                 ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder2));
+
+        LootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CornCropBlock.AGE, 8));
+        addDrop(ModBlocks.CORN_CROP, cropDrops(
+                ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, builder3));
     }
     public LootTable.Builder copperOreLikeDrops(Block drop, Item dropItem) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);

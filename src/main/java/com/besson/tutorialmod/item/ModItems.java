@@ -44,6 +44,9 @@ public class ModItems {
             new Item.Settings().maxDamage(HatItem.Type.HAT.getMaxDamage(5))));
     public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds",
             new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
+    public static final Item CORN_SEEDS = registerItems("corn_seeds",
+            new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
+    public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法

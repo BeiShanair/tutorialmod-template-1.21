@@ -2,12 +2,12 @@ package com.besson.tutorialmod.datagen;
 
 import com.besson.tutorialmod.block.ModBlockFamilies;
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
@@ -25,7 +25,18 @@ public class ModModelsProvider extends FabricModelProvider {
                                         .family(blockFamily));
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
+
         blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
+
+        blockStateModelGenerator.blockStateCollector.accept(
+                        VariantsBlockStateSupplier.create(ModBlocks.CORN_CROP)
+                                .coordinate(BlockStateVariantMap.create(CornCropBlock.AGE)
+                                                .register(stage -> BlockStateVariant.create()
+                                                                .put(VariantSettings.MODEL, blockStateModelGenerator.createSubModel(
+                                                                        ModBlocks.CORN_CROP, "_stage" + stage, Models.CROSS, TextureMap::cross))
+                                                )
+                                )
+                );
 
     }
 
@@ -36,6 +47,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_ICE_ETHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
 
