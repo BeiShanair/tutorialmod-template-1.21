@@ -55,5 +55,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
 
         translationBuilder.add("item.tutorialmod.prospector.shift_tooltip", "A tool used to find ores.");
         translationBuilder.add("item.tutorialmod.prospector.tooltip", "Hold \u00A76SHIFT\u00A7r for more information.");
+
+        translationBuilder.add("entity.minecraft.villager.ice_ether_master", "Ice Ether Master");
     }
 }
