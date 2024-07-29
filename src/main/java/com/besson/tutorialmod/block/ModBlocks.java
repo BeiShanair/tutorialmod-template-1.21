@@ -3,6 +3,7 @@ package com.besson.tutorialmod.block;
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
+import com.besson.tutorialmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,7 +12,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
+    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create()
+            .requiresTool().strength(3.0f, 3.0f).sounds(ModSoundEvents.BLOCK_SOUND_GROUP)));
     public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create().requiresTool().strength(4.5f, 6.0f)));
     public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
     public static final Block  ICE_ETHER_STAIRS = register("ice_ether_stairs",

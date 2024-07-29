@@ -1,5 +1,6 @@
 package com.besson.tutorialmod.item.custom;
 
+import com.besson.tutorialmod.sound.ModSoundEvents;
 import com.besson.tutorialmod.tags.ModBlockTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -11,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -42,6 +44,7 @@ public class Prospector extends Item {
 
                             if (isRightBlock(blockState)) {
                                 player.sendMessage(Text.of("Found" + name + "!"));
+                                world.playSound(null, pos, ModSoundEvents.PROSPECTOR_FOUND_ORE, SoundCategory.BLOCKS, 1.0f, 1.0f);
                                 foundBlock = true;
                                 break;
                             }
@@ -60,6 +63,7 @@ public class Prospector extends Item {
 
                     if (isRightBlock(blockState)) {
                         player.sendMessage(Text.of("Found" + name + "!"));
+                        world.playSound(null, pos, ModSoundEvents.PROSPECTOR_FOUND_ORE, SoundCategory.BLOCKS, 1.0f, 1.0f);
                         foundBlock = true;
                         break;
                     }

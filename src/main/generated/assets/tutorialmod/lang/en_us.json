@@ -35,5 +35,11 @@
   "item.tutorialmod.raw_ice_ether": "Raw Ice Ether",
   "item.tutorialmod.strawberry": "Strawberry",
   "item.tutorialmod.strawberry_seeds": "Strawberry Seeds",
-  "itemGroup.tutorial_group": "Tutorial Group"
+  "itemGroup.tutorial_group": "Tutorial Group",
+  "sounds.tutorialmod.block_break": "Block Break",
+  "sounds.tutorialmod.block_fall": "Block Fall",
+  "sounds.tutorialmod.block_hit": "Block Hit",
+  "sounds.tutorialmod.block_place": "Block Place",
+  "sounds.tutorialmod.block_step": "Block Step",
+  "sounds.tutorialmod.prospector_found_ore": "Prospector Found Ore"
 }

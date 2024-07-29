@@ -4,6 +4,7 @@ import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.ModItemGroups;
 import com.besson.tutorialmod.item.ModItems;
 import com.besson.tutorialmod.mixin.GrassColorsMixin;
+import com.besson.tutorialmod.sound.ModSoundEvents;
 import com.besson.tutorialmod.tags.ModBlockTags;
 import com.besson.tutorialmod.util.ModCustomTrades;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
@@ -34,6 +35,7 @@ public class TutorialMod implements ModInitializer {
 		ModLootTableModifiers.modifyLootTable();
 		ModCustomTrades.registerModCustomTrades();
 		ModVillagers.registerModVillagers();
+		ModSoundEvents.registerModSoundEvents();
 
 //		int[] colorMap = GrassColorsMixin.getColorMap();
 //        LOGGER.info("Grass color map length: {}", colorMap.length);

@@ -57,5 +57,12 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("item.tutorialmod.prospector.tooltip", "Hold \u00A76SHIFT\u00A7r for more information.");
 
         translationBuilder.add("entity.minecraft.villager.ice_ether_master", "Ice Ether Master");
+
+        translationBuilder.add("sounds.tutorialmod.prospector_found_ore", "Prospector Found Ore");
+        translationBuilder.add("sounds.tutorialmod.block_break", "Block Break");
+        translationBuilder.add("sounds.tutorialmod.block_step", "Block Step");
+        translationBuilder.add("sounds.tutorialmod.block_place", "Block Place");
+        translationBuilder.add("sounds.tutorialmod.block_hit", "Block Hit");
+        translationBuilder.add("sounds.tutorialmod.block_fall", "Block Fall");
     }
 }
