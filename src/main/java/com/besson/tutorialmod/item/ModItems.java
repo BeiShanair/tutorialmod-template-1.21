@@ -5,12 +5,14 @@ import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.custom.HatItem;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
+import com.besson.tutorialmod.sound.ModJukeboxSongs;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
     // 注册物品
@@ -47,6 +49,8 @@ public class ModItems {
     public static final Item CORN_SEEDS = registerItems("corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
     public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
+    public static final Item TEST_MUSIC_DISC = registerItems("test_music_disc",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.TEST)));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法

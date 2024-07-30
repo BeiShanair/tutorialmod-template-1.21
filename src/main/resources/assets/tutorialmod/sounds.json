@@ -34,5 +34,10 @@
     "sounds": [
       "tutorialmod:block_step"
     ]
+  },
+  "music_disc.test": {
+    "sounds": [
+      "tutorialmod:test"
+    ]
   }
 }

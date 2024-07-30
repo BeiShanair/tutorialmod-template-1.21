@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.tutorialmod.test"
+  },
+  "length_in_seconds": 247.0,
+  "sound_event": "tutorialmod:music_disc.test"
+}

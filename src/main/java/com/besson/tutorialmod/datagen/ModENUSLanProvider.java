@@ -36,6 +36,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry Seeds");
         translationBuilder.add(ModItems.CORN_SEEDS, "Corn Seeds");
         translationBuilder.add(ModItems.CORN, "Corn");
+        translationBuilder.add(ModItems.TEST_MUSIC_DISC, "Test Music Disc");
 
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
@@ -64,5 +65,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("sounds.tutorialmod.block_place", "Block Place");
         translationBuilder.add("sounds.tutorialmod.block_hit", "Block Hit");
         translationBuilder.add("sounds.tutorialmod.block_fall", "Block Fall");
+
+        translationBuilder.add("jukebox_song.tutorialmod.test", "Test");
     }
 }
