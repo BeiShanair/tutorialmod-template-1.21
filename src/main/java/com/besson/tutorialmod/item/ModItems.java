@@ -2,6 +2,7 @@ package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.ModFluids;
 import com.besson.tutorialmod.item.custom.HatItem;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
@@ -51,6 +52,8 @@ public class ModItems {
     public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
     public static final Item TEST_MUSIC_DISC = registerItems("test_music_disc",
             new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.TEST)));
+    public static final Item OIL_BUCKET = registerItems("oil_bucket",
+            new BucketItem(ModFluids.OIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法

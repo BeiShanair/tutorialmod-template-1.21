@@ -37,6 +37,7 @@ public class ModModelsProvider extends FabricModelProvider {
                                                 )
                                 )
                 );
+        blockStateModelGenerator.registerSimpleState(ModBlocks.OIL);
 
     }
 
@@ -64,6 +65,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_ETHER_BOOTS);
 
         itemModelGenerator.register(ModItems.TEST_MUSIC_DISC, Models.TEMPLATE_MUSIC_DISC);
+        itemModelGenerator.register(ModItems.OIL_BUCKET, Models.GENERATED);
 
     }
 }

@@ -38,6 +38,8 @@ public class ModBlocks {
             new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, "corn_crop"),
             new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+    public static final Block OIL = Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, "oil"),
+            new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER)){});
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {
