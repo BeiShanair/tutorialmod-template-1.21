@@ -54,6 +54,8 @@ public class ModItems {
             new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.TEST)));
     public static final Item OIL_BUCKET = registerItems("oil_bucket",
             new BucketItem(ModFluids.OIL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+    public static final Item ICE_ETHER_HORSE_ARMOR = registerItems("ice_ether_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.ICE_ETHER, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
     private static Item registerItems(String id, Item item){
         // 使用原版的注册方法
