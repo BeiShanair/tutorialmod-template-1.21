@@ -1,8 +1,10 @@
 package com.besson.tutorialmod.block;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.custom.BoxBlock;
 import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
+import com.besson.tutorialmod.block.entity.ModBlockEntities;
 import com.besson.tutorialmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -40,6 +42,7 @@ public class ModBlocks {
             new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static final Block OIL = Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, "oil"),
             new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER)){});
+    public static final Block BOX = register("box", new BoxBlock(AbstractBlock.Settings.copy(Blocks.CHEST), () -> ModBlockEntities.BOX));
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {

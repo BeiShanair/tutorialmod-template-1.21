@@ -77,6 +77,7 @@ public class ModItemGroups {
                     entries.add(ModItems.TEST_MUSIC_DISC);
                     entries.add(ModItems.OIL_BUCKET);
                     entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
+                    entries.add(ModBlocks.BOX);
                 }).build());
     // 初始化方法
     public static void registerModItemGroups() {

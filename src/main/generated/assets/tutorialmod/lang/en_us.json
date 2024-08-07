@@ -1,4 +1,5 @@
 {
+  "block.tutorialmod.box": "Box",
   "block.tutorialmod.ice_ether_block": "Ice Ether Block",
   "block.tutorialmod.ice_ether_button": "Ice Ether Button",
   "block.tutorialmod.ice_ether_door": "Ice Ether Door",
@@ -11,6 +12,7 @@
   "block.tutorialmod.ice_ether_trapdoor": "Ice Ether Trapdoor",
   "block.tutorialmod.ice_ether_wall": "Ice Ether Wall",
   "block.tutorialmod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "container.box": "Box",
   "entity.minecraft.villager.ice_ether_master": "Ice Ether Master",
   "item.tutorialmod.anthracite": "Anthracite",
   "item.tutorialmod.cheese": "Cheese",

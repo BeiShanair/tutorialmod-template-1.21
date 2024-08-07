@@ -53,6 +53,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_WALL, "Ice Ether Wall");
         translationBuilder.add(ModBlocks.ICE_ETHER_DOOR, "Ice Ether Door");
         translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "Ice Ether Trapdoor");
+        translationBuilder.add(ModBlocks.BOX, "Box");
 
         translationBuilder.add("itemGroup.tutorial_group", "Tutorial Group");
 
@@ -69,5 +70,6 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("sounds.tutorialmod.block_fall", "Block Fall");
 
         translationBuilder.add("jukebox_song.tutorialmod.test", "Test");
+        translationBuilder.add("container.box", "Box");
     }
 }

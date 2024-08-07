@@ -38,6 +38,7 @@ public class ModModelsProvider extends FabricModelProvider {
                                 )
                 );
         blockStateModelGenerator.registerSimpleState(ModBlocks.OIL);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.BOX);
 
     }
 
