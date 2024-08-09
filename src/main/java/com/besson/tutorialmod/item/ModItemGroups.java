@@ -78,6 +78,7 @@ public class ModItemGroups {
                     entries.add(ModItems.OIL_BUCKET);
                     entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
                     entries.add(ModBlocks.BOX);
+                    entries.add(ModBlocks.POLISHING_MACHINE);
                 }).build());
     // 初始化方法
     public static void registerModItemGroups() {
