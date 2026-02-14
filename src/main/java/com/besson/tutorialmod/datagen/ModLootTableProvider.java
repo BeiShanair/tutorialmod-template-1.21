@@ -33,7 +33,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICE_ETHER_ORE, copperOreLikeDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER));
     }
     public LootTable.Builder copperOreLikeDrops(Block drop, Item dropItem) {
-        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        // 1.21.2+ 小改动
+        RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(
                 drop,
                 (LootPoolEntry.Builder<?>)this.applyExplosionDecay(

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "tutorialmod:ice_ether"
-    }
+    "#": "tutorialmod:ice_ether"
   },
   "pattern": [
     "###",

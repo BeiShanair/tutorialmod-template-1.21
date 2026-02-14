@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tutorialmod:beetroot_to_sugar"
+        "recipe": "minecraft:sugar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "tutorialmod:beetroot_to_sugar"
+      "minecraft:sugar"
     ]
   }
 }

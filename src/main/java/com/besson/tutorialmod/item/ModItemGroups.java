@@ -14,7 +14,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    // 原版物品栏注册方法
+    // 1.21.2+ 补充内容
+    public static final RegistryKey<ItemGroup> TUTORIAL_GROUP_KEY = RegistryKey.of(
+            RegistryKeys.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID, "tutorial"));
+    
+    //原版物品栏注册方法（1.21~1.21.1）
 //    public static final RegistryKey<ItemGroup> TUTORIAL_GROUP = register("tutorial_group");
 //    private static RegistryKey<ItemGroup> register(String id) {
 //        return RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID, id));
@@ -29,8 +33,9 @@ public class ModItemGroups {
 //                        }).build());
 //        TutorialMod.LOGGER.info("Registering Item Groups");
 //    }
+    
     // 利用返回值为ItemGroup，直接使用static final变量进行注册
-    public static final ItemGroup TUTORIAL_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID, "tutorial_group"),
+    public static final ItemGroup TUTORIAL_GROUP = Registry.register(Registries.ITEM_GROUP, TUTORIAL_GROUP_KEY,
         ItemGroup.create(null, -1).displayName(Text.translatable("itemGroup.tutorial_group"))
                 .icon(() -> new ItemStack(ModItems.ICE_ETHER))
                 .entries((displayContext, entries) -> {
@@ -43,6 +48,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.ICE_ETHER_ORE);
                     entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                 }).build());
+    
     // 初始化方法
     public static void registerModItemGroups() {
         TutorialMod.LOGGER.info("Registering Item Groups");

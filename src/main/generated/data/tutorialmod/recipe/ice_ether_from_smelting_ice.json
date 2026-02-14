@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.7,
   "group": "ice_ether",
-  "ingredient": {
-    "item": "minecraft:ice"
-  },
+  "ingredient": "minecraft:ice",
   "result": {
     "id": "tutorialmod:ice_ether"
   }

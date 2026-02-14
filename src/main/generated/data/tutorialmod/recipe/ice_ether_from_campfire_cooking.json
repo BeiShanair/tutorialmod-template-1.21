@@ -3,9 +3,7 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 0.35,
-  "ingredient": {
-    "item": "tutorialmod:raw_ice_ether"
-  },
+  "ingredient": "tutorialmod:raw_ice_ether",
   "result": {
     "id": "tutorialmod:ice_ether"
   }
